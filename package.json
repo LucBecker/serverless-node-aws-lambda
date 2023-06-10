@@ -51,7 +51,9 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm uninstall sharp && npm install --platform=linux --arch=x64 --target=18.10.0 sharp",
+    "deploy": "serverless deploy",
+    "postdeploy": "npm uninstall sharp && npm install sharp"
   },
   "keywords": [],
   "author": "",
