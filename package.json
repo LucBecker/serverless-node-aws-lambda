@@ -1,9 +1,11 @@
 {
   "name": "nodeless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "optimize.js",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.350.0",
+    "aws-sdk": "^2.1395.0",
     "base64-js": "^1.5.1",
     "bl": "^4.1.0",
     "buffer": "^5.7.1",
