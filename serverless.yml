@@ -20,7 +20,7 @@ functions:
   optimize:
     handler: optimize.handle
     environment:
-      bucket: serverless-node
+      bucket: serverless
     events:
       - s3:
           bucket: serverless-node
@@ -29,7 +29,7 @@ functions:
             - prefix: uploads/
             - suffix: .jpg
       - s3:
-          bucket: serverless-node
+          bucket: serverless
           event: s3:ObjectCreated:*
           rules:
             - prefix: uploads/
