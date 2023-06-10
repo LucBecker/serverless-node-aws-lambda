@@ -20,16 +20,16 @@ functions:
   optimize:
     handler: optimize.handle
     environment:
-      bucket: serverless
+      bucket: beckernodeserverlessnew
     events:
       - s3:
-          bucket: serverless-node
+          bucket: beckernodeserverlessnew
           event: s3:ObjectCreated:*
           rules:
             - prefix: uploads/
             - suffix: .jpg
       - s3:
-          bucket: serverless
+          bucket: beckernodeserverlessnew
           event: s3:ObjectCreated:*
           rules:
             - prefix: uploads/
